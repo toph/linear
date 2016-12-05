@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+
+require "cli"
+
+# Haha, terrible, I know. But relying on method dispatch
+# will actually do a decent job of muxing commands and
+# checking args. Certainly good enough for here.
+CLI.send(*ARGV)
